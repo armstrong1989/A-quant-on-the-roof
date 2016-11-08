@@ -26,7 +26,7 @@ initOrders(portfolio=portfolio.st,initDate=initDate)
 # instantiate a new strategy object
 strategy(qs.strategy,store=TRUE)
 
-##Add a 10-month simple moving average
+##Add a 5 day simple moving average
 add.indicator(strategy = qs.strategy, name = "SMA",
               arguments = list(x = quote(Cl(mktdata)), n=5), label="SMA5")
 
